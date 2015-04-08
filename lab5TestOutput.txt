@@ -1,0 +1,47 @@
+test1a() - fourthPower:
+16
+81
+
+test1b() - fourthPower2:
+16
+81
+
+test1c() - median3:
+2.5
+2.5
+2.5
+2.5
+
+test2a() - factorial:
+1
+1
+2
+6
+24
+120
+
+test2b() - getNth:
+3
+2
+1
+
+test2c() - logarithm: 
+3
+2
+1
+
+test2d() - largest:
+1.0
+2.0
+3.0
+3.0
+3.5
+
+test2e() - contains:
+false
+true
+false
+true
+false
+true
+

@@ -1,0 +1,50 @@
+
+CSC231 Lab 5 Documentation
+Georgina Hutchins
+02/15/15
+
+
+1.
+	a) Non-recursively finding N^4, for any number N, is simply multiplying N by 
+		itself 4 times (N*N*N*N).
+		
+	b) Square(N) computes N^2, and (N^2)*(N^2)= N^4, so square(N)*square(N) computes
+		N^4.
+
+	c) Median3 uses two comparisons to determine if the median is the first or second
+		element in the tuple, else the true conditional returns the third element.
+		The first conditional (if (A-B)*(C-A) >= 0) returns A because it indicates
+		that either A >= B and A <= C or, that A <= B and A >= C, and both statements
+		prove that A (the first element) is the median; the second conditional
+		(if(B-A)*(C-B) >= 0) makes a similar comparison, but returns B as the median.
+
+2.
+	a) Factorial is recursive and returns 1 as the base case for N <= 1 (0! and 1! base cases).
+		Else, N! is computed recursively using the equation N! = N*(N-1)!.
+
+	b) If Nth item = 1, we return the current head of the list, else we call cycleOnce on the
+		list, and then recursively call the function on this list until the Nth value is 
+		the new head, at which point we return (using the base case).
+
+	c) Bases cases handle 1) any X being raised to 0th power, since the answer will always
+		be 1 (Y==1), and 2) any X being raised to the 1st power (X == Y). Recursive case
+		calls function on Y/X and increments return by +1, so once Y/X == 1, the power of
+		X that euqals Y will return.
+
+	d) Base case handles a list with one item (empty tail), returns the head. Compare the 
+		first two elements (head & head of the tail), if 1st > 2nd, push tail of the tail
+		and the head onto a new list and recursively call function on that list (eliminates 
+		smaller item from future comparisons). If the head is smaller, recursively call function
+		on the tail elements -- when the tail is empty, the head will contain the largest 
+		element.
+
+	e) Base case handles empty list (input empty or recursive search did not find data item)
+		(return false) and when data item is the head of the list (return true). If the
+		data item N is not the head, call function on the tail of the list -- cycle through
+		the list until data item is in the head (true), or it was never found (false).
+
+
+
+
+
+
